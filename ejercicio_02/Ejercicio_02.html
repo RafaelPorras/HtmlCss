@@ -1,0 +1,99 @@
+<!-- 
+    Ejercicio 2
+    Crea un formulario en el que haya que introducir los siguientes datos:
+    Nombre, Apellido, e-mail, teléfono y direccion
+
+    Como segunda parte del ejercicio deberás crear una tabla que tendrá
+    4 columnas y 4 filas.
+    En esta tabla deberas hacer que: 
+        1.una de las celdas ocupe dos columnas
+        2.Una de las celdas ocupe dos filas
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description = "Descripcion">
+    <title>Ejercicio Sesion 2</title>
+</head>
+<body>
+    <form id="formulario_datos_personales"
+          method="post"
+          action="#">
+        <h2>Datos personales</h2>
+        <fieldset>
+            <div id="container_formulario_nombre">
+                <label>Nombre </label><br/>
+                <input type="text" placeholder="Aqui tu nombre">
+            </div>
+            <br/>
+            <div id=container_formulario_apellidos> 
+                <label>Apellidos </label><br/>
+                <input type="text" placeholder="Aqui tus apellidos">
+            </div>
+            <br/>
+            <div id="container_formulario_mail">
+                <label>E-mail </label><br/>
+                <input type="email" placeholder="Aqui tu email">
+            </div>
+            <br/>
+            <div id="container_formulario_telefono">
+                <label>Teléfono </label><br/>
+                <input type="tel" placeholder="Aqui tu teléfono">
+            </div>
+            <br/>
+            <div>
+                <label>Dirección </label><br/>
+                <input type="text" placeholder="Aqui tu dirección">
+            </div>
+            <br/>
+            <div>
+                <input type="submit" value="Enviar formulario">
+            </div>
+        </fieldset>
+          
+    </form>
+    <br/>
+    <table border=1>
+        <thead>
+            <tr>
+                <th>columna_1</th>
+                <th>columna_2</th>
+                <th>columna_3</th>
+                <th>columna_4</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">item1</td>
+                <td colspan="2">item2</td>
+                <td>item3</td>
+            
+            </tr>
+            <tr>
+                <td>item4</td>
+                <td>item5</td>
+                <td>item6</td>
+            </tr>
+            <tr>
+                <td>item7</td>
+                <td>item8</td>
+                <td>item9</td>
+                <td>item10</td>
+            </tr>
+            <tr>
+                <td>item11</td>
+                <td>item12</td>
+                <td>item13</td>
+                <td>item14</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
