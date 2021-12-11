@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+    En este ejercicio deberéis crear una página con un formulario de inicio de sesión, 
+    está pagina tendrá:
+        Una imagen de fondo.
+        
+        Un formulario de inicio de sesión, 
+        contendrá mail y contraseña, un recuadro 
+        seleccionable de "Acepto términos y condiciones" 
+        y un botón de enviar.
+
+        Validación de campos.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_07 Login</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <form class="main-form">
+            <div class="main__form-field main">
+                <h1 class=main__form-field-header>Login</h1>
+            </div>
+
+            <div class="main__form-field ">
+                <input type="text" 
+                       placeholder="Usuario" 
+                       class="main__form-field-user"
+                       required
+                       >
+            </div>
+            <div class="main__form-field">
+                <input type="password" 
+                       placeholder="Password" 
+                       class="main__form-field-password"
+                       required
+                       >
+            </div>
+            <div class="main__form-field">
+                <input type="checkbox">
+                <span class="main__form-field-term">Acepto términos y condiciones</span>
+            </div>
+            <div class="main__form-field main__form-field-button">
+                <button type="submit" value="Enviar">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

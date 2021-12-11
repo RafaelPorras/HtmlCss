@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Yuji+Mai&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../resources/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+}
+
+main{
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form{
+    background-color: white;
+    padding:3em 2em;
+    border-radius: 10px;
+}
+
+.main__form-field{
+    margin-bottom: 1em;
+}
+
+.main__form-field:first-of-type{
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.main__form-field-user, 
+.main__form-field-password{
+    width: 100%;
+    height: 30px;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    font-family: 'Yuji Mai', serif;
+}
+
+.main__form-field-user{
+    background-image: url("../resources/user.svg");
+}
+
+.main__form-field-password{
+    background-image: url("../resources/password.svg");
+}
+
+.main__form-field-term{
+    font-family: 'Yuji Mai', serif;
+    font-size: .9rem;
+    color:grey;
+    font-weight: bolder;
+}
+
+.main__form-field-button{
+    text-align: right;
+}
+
+.main__form-field button{
+    padding:5px 10px;
+    background-color: black;
+    color:white;
+    font-family: 'Fuzzy Bubbles', cursive;  
+}
+
