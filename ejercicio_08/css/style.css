@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: grey;
+}
+
+header{
+    background-color: brown;
+    color:white;
+    padding-top:25px;
+    padding-bottom:25px;
+    text-align: center;
+}
+
+article{
+    text-align: center;
+    padding:25px
+}
