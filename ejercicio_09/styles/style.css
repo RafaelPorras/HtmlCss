@@ -1,0 +1,47 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.square{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom:50px;
+    margin-top:100px;
+    transition:transform 3s;
+
+
+}
+
+.rojo{
+    background-color: red;
+}
+
+.verde{
+    background-color: chartreuse;
+}
+
+.square:hover{
+    position: relative;
+    transform: rotate(360deg);
+    animation-name:moveSquare;
+    animation-duration: 2s;
+    opacity: 0;
+}
+
+@keyframes moveSquare{
+    0% {left:0px;opacity:1;}
+    25%{left:50px;opacity: 0.75;}
+    50%{left:100px; opacity: 0.50;}
+    75%{left:150px; opacity: 0.25;}
+    100%{left:200px; opacity: 0;}
+}
