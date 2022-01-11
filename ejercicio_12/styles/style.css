@@ -1,0 +1,28 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    background-color: cornflowerblue;
+    padding-top:10px;
+    padding-bottom: 10px;
+    color:white;
+    margin-bottom: 50px;
+
+}
+
+.row{
+    margin-bottom: 50px;
+}
+
+h3{
+    text-align: center;
+    color:crimson;
+}
+
+.container__progress .progress{
+    height: 25px;
+}
